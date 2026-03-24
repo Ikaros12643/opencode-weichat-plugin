@@ -1,0 +1,44 @@
+{
+  "name": "opencode-wechat",
+  "version": "1.0.0",
+  "description": "OpenCode plugin for WeChat integration via ilink API",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist/",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch"
+  },
+  "dependencies": {
+    "qrcode-terminal": "^0.12.0"
+  },
+  "peerDependencies": {
+    "@opencode-ai/plugin": ">=1.0.0",
+    "@opencode-ai/sdk": ">=1.0.0"
+  },
+  "devDependencies": {
+    "@opencode-ai/plugin": "workspace:*",
+    "@opencode-ai/sdk": "workspace:*",
+    "@types/node": "^20.0.0",
+    "@types/qrcode-terminal": "^0.12.2",
+    "typescript": "^5.0.0"
+  },
+  "keywords": [
+    "opencode",
+    "wechat",
+    "plugin",
+    "ai",
+    "chatbot"
+  ],
+  "license": "MIT"
+}
