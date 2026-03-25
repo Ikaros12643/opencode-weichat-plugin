@@ -1,5 +1,5 @@
 {
-  "name": "opencode-wechat",
+  "name": "opencode-wechat-plugin",
   "version": "1.0.0",
   "description": "OpenCode plugin for WeChat integration via ilink API",
   "type": "module",
@@ -27,8 +27,8 @@
     "@opencode-ai/sdk": ">=1.0.0"
   },
   "devDependencies": {
-    "@opencode-ai/plugin": "workspace:*",
-    "@opencode-ai/sdk": "workspace:*",
+    "@opencode-ai/plugin": "^1.0.0",
+    "@opencode-ai/sdk": "^1.0.0",
     "@types/node": "^20.0.0",
     "@types/qrcode-terminal": "^0.12.2",
     "typescript": "^5.0.0"

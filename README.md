@@ -25,7 +25,7 @@
 1. 在项目中构建插件：
 
 ```bash
-cd opencode-wechat
+cd opencode-wechat-plugin
 bun install
 bun run build
 ```
@@ -142,12 +142,6 @@ https://...
 </wechat_message>
 ```
 
-## 群聊支持
-
-在群聊中：
-
-- `sender_id` 应使用 `group_id`（用于回复整个群）
-- 原始发送者的 ID 会保存在上下文中
 
 ## 数据存储
 

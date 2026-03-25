@@ -99,7 +99,7 @@ export class WeChatClient {
 
     await fetch(uploadResp.upload_url, {
       method: "PUT",
-      body: encrypted,
+      body: new Uint8Array(encrypted),
       headers: { "Content-Length": String(encrypted.length) },
       signal: AbortSignal.timeout(60_000),
     })
